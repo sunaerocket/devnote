@@ -1,8 +1,8 @@
-# 개요
+# GitBook
 
-> 쉽고 빠르게 문서를 작성하게 돕는 플랫폼
-
-[공식문서: https://docs.gitbook.com/](https://docs.gitbook.com/)
+{% hint style="info" %}
+쉽고 빠르게 문서를 작성하게 돕는 플랫폼
+{% endhint %}
 
 ## 주요 개념
 
@@ -11,3 +11,7 @@
 - 페이지, 스페이스로 관심사 분리
 - 동료 초대하여 동시 협업
 - 쉬운 공개/비공개 처리
+
+## 참고자료
+
+- [공식문서: https://docs.gitbook.com/](https://docs.gitbook.com/)
