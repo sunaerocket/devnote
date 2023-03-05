@@ -4,7 +4,7 @@
 
 [공식문서: https://docs.gitbook.com/](https://docs.gitbook.com/)
 
-## 주요기능
+## 주요 개념
 
 - 다양한 문서 불러오기(MS word, Google docs, notion...)
 - github 연동
