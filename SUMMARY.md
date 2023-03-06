@@ -15,6 +15,7 @@
 
 - [GitBook](gitbook.md)
 
-## 취미
-
+## 기록
+- [Journal](/journal/journal.md)
+  - [2023-03-06](/journal/2023-03-06.md)
 - [Books](/books/books.md)
