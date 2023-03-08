@@ -8,8 +8,10 @@
 - [Books](/logs/books.md)
 
 ## Tooling
-- [React](/react/react.md)
+- [React](/tooling/react.md)
 - [Testing](/tooling/testing.md)
+- [Module Bundler](/tooling/bundler/bundler.md)
+  - [Parcel](/tooling/bundler/parcel.md)
 - [Git](/tooling/git.md)
 
 ## Unclassified
