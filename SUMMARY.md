@@ -11,7 +11,7 @@
 ## Tooling
 - [React](/tooling/react.md)
 - [Testing](/tooling/testing.md)
-- [Module Bundler](/tooling/bundler/bundler.md)
+- [Module Bundler](/tooling/bundler/module-bundler.md)
   - [Parcel](/tooling/bundler/parcel.md)
 - [Code Checker](/tooling/checker/code-checker.md)
   - [TypeScript](/tooling/checker/typescript.md)
