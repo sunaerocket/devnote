@@ -13,6 +13,8 @@
 
 - [TypeScript](/typescript/typescript.md)
 
+- [Testing](/testing/testing.md)
+
 - [Git](git.md)
 
 - [GitBook](gitbook.md)
