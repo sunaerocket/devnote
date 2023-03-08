@@ -13,6 +13,9 @@
 - [Testing](/tooling/testing.md)
 - [Module Bundler](/tooling/bundler/bundler.md)
   - [Parcel](/tooling/bundler/parcel.md)
+- [Code Checker](/tooling/checker/code-checker.md)
+  - [TypeScript](/tooling/checker/typescript.md)
+  - [ESLint](/tooling/checker/eslint.md)
 - [Git](/tooling/git.md)
 
 ## Unclassified
@@ -22,8 +25,6 @@
   - [배열](/unclassified/javascript/array/array.md)
   - [구조분해할당](/unclassified/javascript/syntax/destructuring-assignment.md)
   - [나머지 매개변수와 전개 구문](/unclassified/javascript/syntax/rest-parameter-and-spread-operator.md)
-
-- [TypeScript](/unclassified/typescript/typescript.md)
 
 - [GitBook](/unclassified/gitbook.md)
 
