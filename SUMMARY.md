@@ -3,12 +3,14 @@
 - [Introduction](README.md)
 
 ## Logs
+
 - [Journal](logs/journal/journal.md)
   - [2023-03-08](/logs/journal/2023-03-08.md)
   - [2023-03-06](logs/journal/2023-03-06.md)
 - [Books](/logs/books.md)
 
 ## Tooling
+
 - [React](/tooling/react.md)
 - [Testing](/tooling/testing.md)
 - [Module Bundler](/tooling/bundler/module-bundler.md)
@@ -19,13 +21,10 @@
 - [Git](/tooling/git.md)
 
 ## Unclassified
-- [JavaScript](/unclassified/javascript/javascript.md)
 
+- [JavaScript](/unclassified/javascript/javascript.md)
   - [객체](/unclassified/javascript/object/object.md)
   - [배열](/unclassified/javascript/array/array.md)
   - [구조분해할당](/unclassified/javascript/syntax/destructuring-assignment.md)
   - [나머지 매개변수와 전개 구문](/unclassified/javascript/syntax/rest-parameter-and-spread-operator.md)
-
 - [GitBook](/unclassified/gitbook.md)
-
-
