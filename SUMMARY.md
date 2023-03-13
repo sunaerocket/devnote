@@ -14,12 +14,12 @@
 ## Tooling
 
 - [React](/tooling/react.md)
-- [Testing](/tooling/testing.md)
 - [Module Bundler](/tooling/bundler/module-bundler.md)
   - [Parcel](/tooling/bundler/parcel.md)
 - [Code Checker](/tooling/checker/code-checker.md)
   - [TypeScript](/tooling/checker/typescript.md)
   - [ESLint](/tooling/checker/eslint.md)
+- [Testing](/tooling/tester/testing.md)
 - [Git](/tooling/git.md)
 
 ## Unclassified

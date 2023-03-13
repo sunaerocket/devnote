@@ -2,11 +2,29 @@
 
 ## 핵심 개념
 
+### JSX
+
+자바스크립트로 UI를 작성할 때, XML 형태로 작성하여 익숙한 형태로 구조를 파악하기 쉽다. JSX 구문은 트랜스파일러가 React.createElement() 기능을 사용하는 JS 코드로 변환한다. 이를 중첩하여 React Element 기반의 fibers 객체 트리를 만들고, React는 실제 DOM과 비교하여 해야할 작업을 선정한다.
+
+VDOM을 사용하는 이유는 선언형 UI를 가능하게 하여 코드 가독성을 개선하여 유지보수에 도움이 되기 때문이다. DOM 조작과 비교했을 때, 성능 상의 이점이 있다고 보기에는 애매하다.
+
+- [VDOM(Virtual DOM) and internals](https://ko.reactjs.org/docs/faq-internals.html)
+- [Reconciliation](https://ko.reactjs.org/docs/reconciliation.html)
+- [Optimization](https://ko.reactjs.org/docs/optimizing-performance.html)
+
+### Strict Mode
+
+개발 모드에서 안티 패턴을 검출할 수 있는 기능이다.
+
+- [React Strict Mode](https://ko.reactjs.org/docs/strict-mode.html)
+
 ### 멘탈모델
+
 - [Thinking in React: 리액트로 UI 만드는 방법](https://beta.reactjs.org/learn/thinking-in-react)
 - [React as a UI runtime: 만든 사람이 설명하는 리액트 멘탈 모델](https://overreacted.io/ko/react-as-a-ui-runtime/)
 
 ### 렌더링과 리렌더링
+
 - [createRoot](https://beta.reactjs.org/reference/react-dom/client/createRoot)
 - [updating a root component](https://beta.reactjs.org/reference/react-dom/client/createRoot#updating-a-root-component)
 - [when does react re-render?](https://velog.io/@surim014/react-rerender)
