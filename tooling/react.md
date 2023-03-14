@@ -20,7 +20,14 @@ VDOM을 사용하는 이유는 선언형 UI를 가능하게 하여 코드 가독
 
 ### 멘탈모델
 
-- [Thinking in React: 리액트로 UI 만드는 방법](https://beta.reactjs.org/learn/thinking-in-react)
+#### [리액트로 UI를 만드는 방법](https://beta.reactjs.org/learn/thinking-in-react)
+
+1. 설계된 UI를 쪼개서 컴포넌트 계층으로 만든다
+2. Props를 활용하여 정적 컴포넌트를 구현한다
+3. 꼭 필요한 UI 상태를 찾아 구현한다
+4. 상태를 담당하는 컴포넌트를 결정한다
+5. 상태 변경 로직을 작성/전달한다
+
 - [React as a UI runtime: 만든 사람이 설명하는 리액트 멘탈 모델](https://overreacted.io/ko/react-as-a-ui-runtime/)
 
 ### 렌더링과 리렌더링
