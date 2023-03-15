@@ -12,6 +12,19 @@ VDOM을 사용하는 이유는 선언형 UI를 가능하게 하여 코드 가독
 - [Reconciliation](https://ko.reactjs.org/docs/reconciliation.html)
 - [Optimization](https://ko.reactjs.org/docs/optimizing-performance.html)
 
+### Reconciliation(재조정)
+
+React가 상태 보존/재설정에 따라 처리하는 UI 변경을 의미한다.
+
+브라우저가 UI를 모델링하기 위해 DOM, CSSOM, AOM 같은 트리 구조를 사용하는 것처럼 React는 컴포넌트를 UI 트리로 만들어 React DOM을 만들고, 브라우저 DOM과 동기화한다.
+
+컴포넌트에 선언한 state는 UI 트리에 컴포넌트가 추가될 때 초기화되고 UI 트리에서 컴포넌트가 사라지면 state 역시 제거된다. 따라서 JSX 마크업이 아닌 UI 트리에서의 컴포넌트 위치를 기준으로 생각해야 한다.
+
+React는 UI 트리에서 컴포넌트가 유지되는 한 state를 유지한다. 그리고 목록을 렌더링할 때, 다른 key를 제공하면 상태를 초기화한다. 가급적이면 의도하지 않은 초기화를 피하기 위해 컴포넌트를 중첩 선언하지 않는 것을 권장한다.
+
+- [Preserving and Resetting State](https://beta.reactjs.org/learn/preserving-and-resetting-state)
+- [Reconciliation](https://ko.reactjs.org/docs/reconciliation.html)
+
 ### Strict Mode
 
 개발 모드에서 안티 패턴을 검출할 수 있는 기능이다.
