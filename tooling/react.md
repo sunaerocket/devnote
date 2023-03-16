@@ -41,7 +41,20 @@ React는 UI 트리에서 컴포넌트가 유지되는 한 state를 유지한다.
 4. 상태를 담당하는 컴포넌트를 결정한다
 5. 상태 변경 로직을 작성/전달한다
 
-- [React as a UI runtime: 만든 사람이 설명하는 리액트 멘탈 모델](https://overreacted.io/ko/react-as-a-ui-runtime/)
+#### [UI 실행환경 관점의 리액트](https://overreacted.io/ko/react-as-a-ui-runtime/)
+
+- 리액트는 UI 트리를 출력하는 프로그램이다.
+- 리액트는 외부 이벤트에 반응하여 UI를 조작하는 API를 제공한다
+- 렌더러는 특정 실행 환경과 상호작용하고, 호스트 인스턴스를 관리하도록 알려준다.
+  - 리액트 렌더러는 "mutating", "persistent" 두가지 모드로 작동한다.
+  - "mutating" 모드는 UI 트리에 노드를 생성, 갱신, 제거하는 기능을 제공한다.
+  - "persistent" 모드는 부모 트리를 복제하고 직계 자식 노드를 교체한다. => 잘 이해되지 않는 표현
+- 브라우저 실행환경에서 가장 작은 빌딩 블록이 DOM 노드인 것처럼, 리액트 UI 트리의 가장 작은 빌딩 블록은 React Element다.
+  - React Element는 실행 환경의 인스턴스를 표현하는 객체다.
+    - ex: 실행환경 : 인스턴스 = 브라우저 : DOM node
+  - JSX는 React Element == JS Object를 생성하는 개꿀 문법(syntactic sugar)이다.
+  - React Element는 렌더링 할 때마다 재생성한다.
+- 리액트 렌더러가 엔트리 포인트를 잡을 수 있도록 element를 제공한다
 
 ### 렌더링과 리렌더링
 
