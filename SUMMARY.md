@@ -5,6 +5,8 @@
 ## Logs
 
 - [Journal](logs/journal/journal.md)
+  - [2023-03-28](/logs/journal/2023-03-28.md)
+  - [2023-03-20](/logs/journal/2023-03-20.md)
   - [2023-03-17](/logs/journal/2023-03-17.md)
   - [2023-03-16](/logs/journal/2023-03-16.md)
   - [2023-03-15](/logs/journal/2023-03-15.md)
@@ -29,6 +31,7 @@
 
 ## Unclassified
 
+- [Backend](/unclassified/backend/basic.md)
 - [JavaScript](/unclassified/javascript/javascript.md)
   - [객체](/unclassified/javascript/object/object.md)
   - [배열](/unclassified/javascript/array/array.md)
