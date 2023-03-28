@@ -6,6 +6,7 @@
 
 - [Journal](logs/journal/journal.md)
   - [2023-03-28](/logs/journal/2023-03-28.md)
+  - [2023-03-27](/logs/journal/2023-03-27.md)
   - [2023-03-20](/logs/journal/2023-03-20.md)
   - [2023-03-17](/logs/journal/2023-03-17.md)
   - [2023-03-16](/logs/journal/2023-03-16.md)
@@ -20,6 +21,7 @@
 
 ## Tooling
 
+- [Browser](/tooling/browser.md)
 - [React](/tooling/react.md)
 - [Module Bundler](/tooling/bundler/module-bundler.md)
   - [Parcel](/tooling/bundler/parcel.md)
