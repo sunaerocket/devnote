@@ -5,6 +5,7 @@
 ## Logs
 
 - [Journal](logs/journal/journal.md)
+  - [2023-04-01](/logs/journal/2023-04-01.md)
   - [2023-03-29](/logs/journal/2023-03-29.md)
   - [2023-03-28](/logs/journal/2023-03-28.md)
   - [2023-03-27](/logs/journal/2023-03-27.md)

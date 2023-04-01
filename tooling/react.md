@@ -35,7 +35,8 @@ React Hooks는 React 16.8 버전부터 도입된 기능으로, 함수 컴포넌�
 
 ### useState
 
-시간을 두고 변화하는 값을 React에서 관리한다.
+React에서 관리하는 상태 값으로, 직접 값을 변경하지 않고 setState() 함수로 변경한다. 값이 변경되면 컴포넌트를 리렌더링 하기 위해 사용한다.
+
 ### useEffect
 
 ***Synchonizing with effects 정리 필요***
@@ -48,21 +49,57 @@ React Hooks는 React 16.8 버전부터 도입된 기능으로, 함수 컴포넌�
 
 React Strict Mode 적용한 경우, 예상치 못한 side effect를 찾기 위해 effect 등을 두번씩 실행하지만 의도된 정상 동작이다.
 
-- [React: Synchronizing with effects](https://react.dev/learn/synchronizing-with-effects)
-- [React: You might not need an effect](https://react.dev/learn/you-might-not-need-an-effect)
+- [React: Synchronizing with effects(beta)](https://react.dev/learn/synchronizing-with-effects)
+- [React: You might not need an effect(beta)](https://react.dev/learn/you-might-not-need-an-effect)
 - [React: Using the Effect Hook](https://ko.reactjs.org/docs/hooks-effect.html)
-- [React: useEffect](https://react.dev/reference/react/useEffect)
+- [React: useEffect(beta)](https://react.dev/reference/react/useEffect)
 - [Overreacted: A complete guide to useEffect](https://overreacted.io/ko/a-complete-guide-to-useeffect/)
-
-### useContext
 
 ### useRef
 
-### useLayoutEffect
+React 상태관리와 다르게 로직에서 값을 변경해도 렌더링에 영향을 주지 않는다. 보통 DOM에 직접 접근할 때 사용한다.
+React는 ref.current 속성을 변경(mutate)해도 컴포넌트 리렌더링을 하지 않는다. 변경 시 렌더링에 영향을 주는 React state 값과는 구분해서 사용해야 한다. ref.current 속성은 컴포넌트가 마운트되고 언마운트되기 전까지 유지된다. 렌더링 도중에 초기화 이외의 write/read 작업을 권장 하지 않는다. 컴포넌트 동작을 예측할 수 없게 만들기 때문이다.
+
+#### 사용 사례
+
+***useRef 사용 사례 수집 필요***
+
+- [React: useRef(beta)](https://react.dev/reference/react/useRef)
+- [React: useRef](https://ko.reactjs.org/docs/hooks-reference.html#useref)
+
+### Custom Hooks
+
+특정 로직을 컴포넌트에서 재사용하기 위해 사용. 컴포넌트 내부의 코드량이 줄어들고 식별자만 읽어도 내용을 알 수 있어 가독성이 좋아진다. use로 시작하는 함수 이름을 camelCase로 작성한다.
+
+- [React: Reusing Logic with Custom Hooks(beta)](https://react.dev/learn/reusing-logic-with-custom-hooks)
+- [React: Custom Hooks](https://ko.reactjs.org/docs/hooks-custom.html)
+
+### Hook 규칙
+
+1. 최상위에서만 Hook을 호출해야 한다. 반복문, 조건문, 중첩 함수 내에서 Hook을 호출하면 안된다.
+2. React 함수 컴포넌트 내에서만 Hook을 호출해야 한다. 일반 JavaScript 함수 내에서 Hook을 호출하면 안된다.
+
+- [React: Hooks Rules](https://ko.reactjs.org/docs/hooks-rules.html)
+
+### usehook-ts
+
+다양한 커스텀 훅을 제공하고, 코드를 참고 할 수 있어 커스텀 훅을 만들기 전 참고하기 좋다.
+다만 데이터 요청하기는 더 다양하고 강력한 기능을 지원하는 swr, react-query 등의 라이브러리를 사용하는 것을 권장한다.
+
+- useInterval: setInterval을 직접 사용하는 것보다 유용하다.
+- useEventListener: 모든 종류의 이벤트를 확인할 수 있고, 특히 dispatchEvent로 전달되는 커스텀 이벤트에 반응하기 좋다.
+- useLocalStorage: localStorage, JSON 조합으로 객체 영속화. 이벤트를 통해(dispatchEvent + useEventListner) 다른 컴포넌트와 동기화하는 게 매우 중요한 특징.
+
+- [usehooks-ts: Documetation](https://usehooks-ts.com/)
+- [SWR: 데이터 가져오기를 위한 React Hooks](https://swr.vercel.app/ko)
+- [React Query: Powerful asynchronous state management for TS/JS, React, Solid, Vue and Svelte](https://tanstack.com/query/latest)
+- [Youtube: React에서의 타이머 part 1 : setInterval 말고 이것!](https://www.youtube.com/watch?v=2tUdyY5uBSw)
 
 ## React Strict Mode
 
 개발 모드에서만 작동하는 컴포넌트로, 애플리케이션 내의 잠재적인 문제를 식별하는 데 도움을 준다. StrictMode는 다음과 같은 기능을 제공한다.
+
+useEffect, useRef 사용 시, 예상치 못한 side effect를 찾기 위해 effect 등을 두번씩 실행한다. 이는 의도된 정상 동작이다.
 
 - [React: detecting-unexpected-side-effects](https://ko.reactjs.org/docs/strict-mode.html#detecting-unexpected-side-effects)
 
