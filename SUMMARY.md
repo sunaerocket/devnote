@@ -5,6 +5,8 @@
 ## Logs
 
 - [Journal](logs/journal/journal.md)
+  - [2023-04-03](/logs/journal/2023-04-03.md)
+  - [2023-04-02](/logs/journal/2023-04-02.md)
   - [2023-04-01](/logs/journal/2023-04-01.md)
   - [2023-03-29](/logs/journal/2023-03-29.md)
   - [2023-03-28](/logs/journal/2023-03-28.md)
@@ -42,3 +44,4 @@
   - [구조분해할당](/unclassified/javascript/syntax/destructuring-assignment.md)
   - [나머지 매개변수와 전개 구문](/unclassified/javascript/syntax/rest-parameter-and-spread-operator.md)
 - [GitBook](/unclassified/gitbook.md)
+- [TDD](/unclassified/tdd.md)
