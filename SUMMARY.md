@@ -33,6 +33,7 @@
   - [TypeScript](/tooling/checker/typescript.md)
   - [ESLint](/tooling/checker/eslint.md)
 - [Testing](/tooling/tester/testing.md)
+  - [Jest](/tooling/tester/jest.md)
 - [Git](/tooling/git.md)
 
 ## Unclassified
