@@ -8,42 +8,6 @@
 
 - [GitHub/ahastudio: Given When Then 패턴](https://github.com/ahastudio/til/blob/main/blog/2018/12-08-given-when-then.md)
 
-## Jest
-
-테스트를 작성하고 실행하기 위한 도구.
-
-### 사용 사례
-
-#### 타입스크립트 사용을 위한 설정
-
-```javascript
-// jest.config.js
-
-module.exports = {
-  testEnvironment: 'jsdom',
-  setupFilesAfterEnv: [
-    '@testing-library/jest-dom/extend-expect',
-  ],
-  transform: {
-    '^.+\\.(t|j)sx?$': ['@swc/jest', {
-      jsc: {
-        parser: {
-          syntax: 'typescript',	
-          jsx: true,
-          decorators: true,
-        },
-        transform: {	
-          react: {
-            runtime: 'automatic',
-          },
-        },
-      },
-    }],
-  },
-};
-```
-
-- [Jest: Delightful JavaScript Testing Framework with a focus on simplicity](https://jestjs.io/)
 
 ## 참고자료
 
