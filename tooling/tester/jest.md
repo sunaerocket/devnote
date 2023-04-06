@@ -15,7 +15,7 @@
 
 ### 모듈 모킹하기
 
-외부 의존성이 큰 코드를 테스트하기 위해 가짜를 만든다.
+외부 의존성이 큰 코드를 테스트하기 위해 가짜를 만든다. 일반적으로 백엔드와 소통하는 부분을 반복적으로 모킹하는 경우가 빈번한데 대안 중 하나로 [MSW(Mock Service Worker)](../msw.md)를 사용할 수 있다.
 
 ```javascript
 import { render, screen } from '@testing-library/react';
