@@ -15,7 +15,7 @@
 
 ### 5주차(2023-04-03 ~ 2023-04-09)
 
-TDD를 중심으로, FE 테스트 작성에 필요한 개념인 jest, react-testing-library, msw를 정리했다.(WIP)
+TDD를 중심으로, FE 테스트 작성에 필요한 개념인 jest, react-testing-library, msw, playwright를 정리했다.
 
 ### 4주차(2023-03-27 ~ 2023-04-02)
 
