@@ -43,7 +43,6 @@
 
 ## Unclassified
 
-- [Backend](/unclassified/backend/basic.md)
 - [JavaScript](/unclassified/javascript/javascript.md)
   - [객체](/unclassified/javascript/object/object.md)
   - [배열](/unclassified/javascript/array/array.md)
