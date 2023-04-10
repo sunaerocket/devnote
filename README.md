@@ -13,6 +13,10 @@
 
 ## Change Log
 
+### 6주차(2023-04-10 ~ 2023-04-16)
+
+TDD 개념 복습을 진행중이다(WIP)
+
 ### 5주차(2023-04-03 ~ 2023-04-09)
 
 TDD를 중심으로, FE 테스트 작성에 필요한 개념인 jest, react-testing-library, msw, playwright를 정리했다.
