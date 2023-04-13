@@ -5,6 +5,7 @@
 ## Logs
 
 - [Journal](logs/journal/journal.md)
+  - [2023-04-12](/logs/journal/2023-04-13.md)
   - [2023-04-10](/logs/journal/2023-04-10.md)
   - [2023-04-09](/logs/journal/2023-04-09.md)
   - [2023-04-08](/logs/journal/2023-04-08.md)
@@ -36,6 +37,7 @@
 
 - [Browser](/frontend/browser.md)
 - [React](/frontend/react.md)
+  - [External Store](/frontend/extenal-store.md)
 - [Module Bundler](/frontend/bundler/module-bundler.md)
   - [Parcel](/frontend/bundler/parcel.md)
 - [Code Checker](/frontend/checker/code-checker.md)
