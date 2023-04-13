@@ -37,7 +37,7 @@
 
 - [Browser](/frontend/browser.md)
 - [React](/frontend/react.md)
-  - [External Store](/frontend/extenal-store.md)
+  - [External Store](/frontend/external-store.md)
 - [Module Bundler](/frontend/bundler/module-bundler.md)
   - [Parcel](/frontend/bundler/parcel.md)
 - [Code Checker](/frontend/checker/code-checker.md)
