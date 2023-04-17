@@ -38,6 +38,7 @@
 - [Browser](/frontend/browser.md)
 - [React](/frontend/react.md)
   - [External Store](/frontend/external-store.md)
+  - [Routing](/frontend/routing.md)
 - [Module Bundler](/frontend/bundler/module-bundler.md)
   - [Parcel](/frontend/bundler/parcel.md)
 - [Code Checker](/frontend/checker/code-checker.md)
