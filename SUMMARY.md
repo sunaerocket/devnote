@@ -36,17 +36,19 @@
 ## Frontend
 
 - [Browser](/frontend/browser.md)
-- [React](/frontend/react.md)
-  - [External Store](/frontend/external-store.md)
-  - [Routing](/frontend/routing.md)
+- [React](/frontend/react/react.md)
+  - [Testing](/frontend/react/testing/testing.md)
+    - [Playwright](/frontend/react/testing/playwright.md)
+    - [Jest](/frontend/react/testing/jest.md)
+    - [MSW](/frontend/react/testing/msw.md)
+  - [External Store](/frontend/react/external-store/external-store.md)
+  - [Routing](/frontend/react/routing/routing.md)
+    - [React Router](/frontend/react/routing/react-router.md)
 - [Module Bundler](/frontend/bundler/module-bundler.md)
   - [Parcel](/frontend/bundler/parcel.md)
 - [Code Checker](/frontend/checker/code-checker.md)
   - [TypeScript](/frontend/checker/typescript.md)
   - [ESLint](/frontend/checker/eslint.md)
-- [Testing](/frontend/tester/testing.md)
-  - [Jest](/frontend/tester/jest.md)
-  - [MSW](/frontend/tester/msw.md)
 - [Git](/frontend/git.md)
 
 ## Unclassified
