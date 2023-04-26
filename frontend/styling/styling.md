@@ -41,3 +41,55 @@ Fluid Grid 개념은 뷰포트의 너비에 비례하여 그리드 안에 있는
 - [Microsoft Fluent Design System](https://www.microsoft.com/design/fluent/#/)
 - [Carbon Design System by IBM](https://www.carbondesignsystem.com/)
 - [Ant Design by Alibaba](https://ant.design/)
+
+## CSS in JS
+
+JavaScript를 사용해서 CSS를 작성하는 방식으로, 스타일 객체를 생성하여 각 요소의 style 속성에 바인딩한다. 대안으로는 CSS Module이 있다.
+
+### "대규모 어플리케이션에서 CSS는 근본적인 결함이 있으며 JS 스타일링이 많은 문제를 해결한다"
+
+1. Global Namespace: CSS는 전역 네임스페이스를 사용하기 때문에 이름이 충돌하는 경우가 있다
+2. Dependencies: 스타일시트 간에 의존성이 존재하는 경우, 로드 순서에 따라 스타일이 달라질 수 있다
+3. Dead Code Elimination: 사용하지 않는 스타일을 식별하고 제거하는 것이 어렵다
+4. Minification: CSS는 압축되지 않기 때문에 불필요한 공백이나 주석이 포함되어 있다
+5. Sharing Constants: CSS와 JS는 상수를 공유할 수 없다
+6. None Deterministic Resolution: 비동기적으로 로딩되어 순서가 보장되지 않아 동일한 스타일 규칙이 다르게 렌더링 될 수도 있다
+7. Breaking Isolation: CSS는 스타일 규칙이 전역 네임스페이스를 공유하기 때문에 스타일 규칙이 의도치 않게 덮어쓰여질 수 있다
+
+CSS in JS는 조건부 또는 커스텀 스타일링을 쉽게 구현할 수 있고, 스타일을 컴포넌트와 함께 캡슐화할 수 있어서 재사용성을 높일 수 있다. 또한, 스타일을 동적으로 생성하기 때문에 런타임에 스타일을 변경할 수 있다는 장점이 있다.
+
+- [2014, React: CSS in JS](https://blog.vjeux.com/2014/javascript/react-css-in-js-nationjs.html)
+
+### "CSS in JS는 다섯 가지 관점에서 혁신의 가능성이 있다"
+
+1. Scoped Style: 클래스 이름이 충돌하지 않도록 스타일을 캡슐화할 수 있다
+2. Critical CSS: 서버사이드 렌더링 과정에서 페이지에 필요한 스타일만 쉽게 추출하여 로드할 수 있다
+3. Smarter Optimizations: 스타일을 요소에 적용할 때, 필요한 CSS 코드만을 생성하는 기법이다
+4. Package Management: CSS를 작고 재사용성 있는 패키지로 만들어 서로 조합하여 거대한 스타일 컬렉션을 구성한다면 생태계가 더 커질 것이다
+5. None Browser Styling: 브라우저 이외의 환경에서도 일관적인 스타일을 적용할 수 있다(ex: RN의 StyleSheet API)
+
+- [2017, "A Unified Styling Language"](https://blog.rhostem.com/posts/2017-06-24-unified-styling-language)
+
+### "CSS in JS는 컴포넌트 기반의 웹 개발에 적합하다"
+
+CSS는 웹이 페이지 기반으로 작성될 때를 기준으로 발전해왔지만, 현대 웹은 컴포넌트 기반으로 작성되고 있고 자연스럽게 컴포넌트의 상태에 따라 스타일이 변경되는 경우가 많다. CSS in JS는 컴포넌트 상태를 기반으로 조건부 스타일링을 쉽게 구현할 수 있게 해주고, 컴포넌트를 스타일과 함께 캡슐화하여 재사용성을 높일 수 있다.
+
+- [2017, "All You Need To Know About CSS-in-JS"](https://d0gf00t.tistory.com/22)
+
+### "CSS in JS는 장점과 단점이 갈린다"
+
+#### 장점
+
+1. Scoped Style: 스타일을 지역 변수로 지정하여 이름 충돌 문제를 방지한다
+2. Colocation: 단일 컴포넌트에 관련된 모든 것을 같은 위치에 둘 수 있다
+3. Work w/ JS Variable: JS 변수를 CSS에 공유하기 쉽다
+
+#### 단점
+
+1. Runtime Overhead: JS로 작성된 스타일을 일반 CSS로 변환하는 과정이 필요하다
+2. Bundle Size: 사이트 사용자는 CSS-in-JS 라이브러리를 다운로드해야 한다
+3. React DevTools: 스타일 컴포넌트에 파묻혀 디버깅 대상을 찾기 어렵다
+
+- [2019, Colocation](https://kentcdodds.com/blog/colocation)
+- [2021, "CSS-in-JS와 성능"](https://hyeonseok.com/blog/877)
+- [2022, "Why We're Breaking Up with CSS-in-JS"](https://junghan92.medium.com/%EB%B2%88%EC%97%AD-%EC%9A%B0%EB%A6%AC%EA%B0%80-css-in-js%EC%99%80-%ED%97%A4%EC%96%B4%EC%A7%80%EB%8A%94-%EC%9D%B4%EC%9C%A0-a2e726d6ace6)

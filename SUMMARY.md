@@ -5,6 +5,7 @@
 ## Logs
 
 - [Journal](logs/journal/journal.md)
+  - [2023-04-26](/logs/journal/2023-04-26.md)
   - [2023-04-25](/logs/journal/2023-04-25.md)
   - [2023-04-24](/logs/journal/2023-04-24.md)
   - [2023-04-18](/logs/journal/2023-04-18.md)
@@ -48,6 +49,8 @@
   - [External Store](/frontend/react/external-store/external-store.md)
   - [Routing](/frontend/react/routing/routing.md)
     - [React Router](/frontend/react/routing/react-router.md)
+- [HTML](/frontend/html/html.md)
+  - [Semantic Markup](/frontend/html/semantic-markup.md)
 - [Styling](/frontend/styling/styling.md)
 - [Module Bundler](/frontend/bundler/module-bundler.md)
   - [Parcel](/frontend/bundler/parcel.md)
