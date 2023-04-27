@@ -52,6 +52,7 @@
 - [HTML](/frontend/html/html.md)
   - [Semantic Markup](/frontend/html/semantic-markup.md)
 - [Styling](/frontend/styling/styling.md)
+  - [styled-components](/frontend/styling/styled-components.md)
 - [Module Bundler](/frontend/bundler/module-bundler.md)
   - [Parcel](/frontend/bundler/parcel.md)
 - [Code Checker](/frontend/checker/code-checker.md)
