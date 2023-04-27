@@ -93,3 +93,38 @@ CSS는 웹이 페이지 기반으로 작성될 때를 기준으로 발전해왔�
 - [2019, Colocation](https://kentcdodds.com/blog/colocation)
 - [2021, "CSS-in-JS와 성능"](https://hyeonseok.com/blog/877)
 - [2022, "Why We're Breaking Up with CSS-in-JS"](https://junghan92.medium.com/%EB%B2%88%EC%97%AD-%EC%9A%B0%EB%A6%AC%EA%B0%80-css-in-js%EC%99%80-%ED%97%A4%EC%96%B4%EC%A7%80%EB%8A%94-%EC%9D%B4%EC%9C%A0-a2e726d6ace6)
+
+## CSS Reset
+
+브라우저마다 구현 세부사항이 달라 기본 스타일 기반으로 작업을 하면 일관성을 유지하기 어렵다. 이런 맥락에서 기본 스타일을 초기화하여 일관성있는 스타일을 작성할 수 있도록 처리하는 기법이다.
+
+- [CSS Tools: Reset CSS](https://meyerweb.com/eric/tools/css/reset/)
+- [GitHub/styled-reset: Eric Meyer's Reset CSS for styled-components](https://github.com/zacanger/styled-reset)
+
+## Global Style
+
+1. `box-sizing`: 폭과 너비를 계산할 때, 패딩과 외곽선을 포함하는 border-box가 일반적이다
+2. `62.5% font size trick`: 반응형 타이포그래피 설계에 유리한 rem 단위 크기를 1rem에 10px로 설정하여 계산을 쉽게 한다
+3. `word-break`: 한글 제목의 경우, 줄바꿈을 방지하는 keep-all을 기본값으로 설정한다
+
+---
+
+- [styled-components/docs/api: createGlobalStyle](https://styled-components.com/docs/api#createglobalstyle)
+- [Mozilla/docs/learn/CSS: The box model](https://developer.mozilla.org/ko/docs/Learn/CSS/Building_blocks/The_box_model#%EB%8C%80%EC%B2%B4_css_box_model)
+- [Mozilla/docs/Web/CSS: box-sizing](https://developer.mozilla.org/ko/docs/Web/CSS/box-sizing)
+- [Aleksandr Hovhannisyan: "The 62.5% Font Size Trick"](https://www.aleksandrhovhannisyan.com/blog/62-5-percent-font-size-trick/)
+- [Tweeter/keep-all-villain](https://twitter.com/keepallvillain)
+- [Mozilla/docs/Web/CSS: word-break](https://developer.mozilla.org/ko/docs/Web/CSS/word-break)
+
+## Theme
+
+어플리케이션에서 사용하는 디자인 시스템의 전반적인 스타일을 관리하는 개념. 테마를 사용하면 디자인 시스템을 일관성 유지와 스타일 변경에 유리하다. 대규모 프로젝트일수록 효용은 커진다. 색상이나 폰트, 간격 같은 요소를 어플리케이션의 맥락상 직관적인 이름으로 관리할 수 있다.
+
+### 권장사항
+
+- 자동완성을 위해 Theme 타입을 잡아주는 것을 권장한다
+- Jest 실행 시, window.matchMedia 문제가 발생하므로 목킹 추가를 권장한다.
+
+- [styled-components/docs: Theming](https://styled-components.com/docs/advanced#theming)
+- [styled-components/docs/api: Create a declaration file](https://styled-components.com/docs/api#create-a-declarations-file)
+- [jest/docs/manual: Mocking methods which are not implemented in JSDOM](https://jestjs.io/docs/manual-mocks#mocking-methods-which-are-not-implemented-in-jsdom)
