@@ -62,6 +62,7 @@
 
 ## Unclassified
 
+- [웹 개발 계획하기](/unclassified/web-dev-planning.md)
 - [JavaScript](/unclassified/javascript/javascript.md)
   - [객체](/unclassified/javascript/object/object.md)
   - [배열](/unclassified/javascript/array/array.md)
