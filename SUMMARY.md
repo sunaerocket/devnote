@@ -16,6 +16,7 @@
 * [VCS: Git & GitHub](toolchain/vcs/README.md)
 * [Ecosystem: React](toolchain/react/README.md)
   * [리액트 개발 환경 세팅하기](toolchain/react/2023-setting-up-react-project.md)
+  * [렌더링 또는 재렌더링](toolchain/react/rendering.md)
 
 ## Accessibility
 
