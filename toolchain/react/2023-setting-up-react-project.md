@@ -21,6 +21,8 @@ OS나 Shell에 따라 설치 방법이 달라지기 때문에 [공식 문서](ht
 
 JavaScript를 확장하여 타입 시스템을 강화한 언어로, 트랜스파일링을 통해 JavaScript로 변환된다. TypeScript는 앱의 복잡도가 증가할수록 높아지는 타입 오류의 위험을 줄여준다. 오류도 상대적으로 구체적인 메시지를 제공하므로 디버깅이 쉽다.
 
+실질적으로 텍스트 에디터에서 제공하는 실시간 오류 검사와 자동 완성 기능으로 개발 생산성을 향상시킨다.
+
 #### TypeScript 참고자료
 
 * [TypeScript for JavaScript Programmers](https://www.typescriptlang.org/ko/docs/handbook/typescript-in-5-minutes.html)
@@ -106,8 +108,6 @@ curl -fsSL https://fnm.vercel.app/install | bash
 1.0.2: 쉘 셋업하기
 
 지원범위: bash, zsh, fish, powershell
-
-```bash
 
 ```bash
 fnm completions --shell <SHELL>
