@@ -108,8 +108,6 @@ curl -fsSL https://fnm.vercel.app/install | bash
 지원범위: bash, zsh, fish, powershell
 
 ```bash
-
-```bash
 fnm completions --shell <SHELL>
 ```
 
