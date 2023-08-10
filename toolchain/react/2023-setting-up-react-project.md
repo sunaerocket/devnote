@@ -275,6 +275,21 @@ module.exports = {
 npm i -D parcel
 ```
 
+이미지를 비롯한 정적 파일을 처리하기 위해 패키지를 설치한다.
+
+```bash
+npm install -D parcel-reporter-static-files-copy
+```
+
+설치한 패키지를 사용하기 위해 `.parcelrc` 파일을 작성한다.
+
+```json
+{
+  "extends": ["@parcel/config-default"],
+  "reporters":  ["...", "parcel-reporter-static-files-copy"]
+}
+```
+
 ### 1.9: 패키지 스크립트 수정
 
 package.json 예시 파일을 참고하여 웹프로젝트의 엔트리 파일을 정의하기 위한 `source` 속성을 추가하고, 필요한 스크립트를 추가한다.
