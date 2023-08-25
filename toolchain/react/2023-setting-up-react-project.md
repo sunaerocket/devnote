@@ -186,6 +186,9 @@ node_modules/
 .cache
 .parcel-cache
 
+# build output
+dist
+
 # Stores VSCode versions used for testing VSCode extensions
 .vscode-test
 ```
