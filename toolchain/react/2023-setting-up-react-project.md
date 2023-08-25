@@ -150,26 +150,44 @@ touch .gitignore
 ```
 
 ```gitignore
-### .gitignore 예시 ###
+### Node ###
 
-# dependencies
-/node_modules
-
-# build output
-/build
-
-# environment variables
-/.env.local
-/.env.development.local
-/.env.test.local
-/.env.production.local
-
-# misc
-.DS_Store
+# Logs
+logs
 *.log
 npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
+
+# Diagnostic reports (https://nodejs.org/api/report.html)
+report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Coverage directory used by tools like istanbul
+coverage
+
+# Dependency directories
+node_modules/
+
+# TypeScript cache
+*.tsbuildinfo
+
+# dotenv environment variable files
+.env
+.env.development.local
+.env.test.local
+.env.production.local
+.env.local
+
+# parcel-bundler cache (https://parceljs.org/)
+.cache
+.parcel-cache
+
+# Stores VSCode versions used for testing VSCode extensions
+.vscode-test
 ```
 
 ### 1.4: TypeScript 설정
