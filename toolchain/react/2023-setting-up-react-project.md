@@ -227,7 +227,11 @@ env: {
 },
 ```
 
-eslintignore 파일을 작성하고 필요한 경로를 추가한다.
+eslintignore 파일을 작성하고 필요한 경로를 추가한다. 보통 gitignore 파일과 동일한 경로를 추가한다.
+
+```bash
+touch .eslintignore
+```
 
 ```plaintext
 ### .eslintignore 예시 ###
@@ -254,6 +258,10 @@ npm i -D jest @types/jest @swc/core @swc/jest \
 ```
 
 더 빠른 테스트 실행을 위해 swc 설정을 추가한다.
+
+```bash
+touch jest.setup.js
+```
 
 ```js
 // jest.config.js 예시
@@ -301,11 +309,21 @@ npm install -D parcel-reporter-static-files-copy
 
 설치한 패키지를 사용하기 위해 `.parcelrc` 파일을 작성한다.
 
+```bash
+touch .parcelrc
+```
+
 ```json
 {
   "extends": ["@parcel/config-default"],
   "reporters":  ["...", "parcel-reporter-static-files-copy"]
 }
+```
+
+빌드 오류를 피하기 위해 폴더를 생성해준다.
+
+```bash
+mkdir static
 ```
 
 ### 1.9: 패키지 스크립트 수정
@@ -314,9 +332,7 @@ package.json 예시 파일을 참고하여 웹프로젝트의 엔트리 파일�
 
 ```json
 {
-  "name": "react",
-  "version": "1.0.0",
-  "description": "",
+  ...
   "source": "./index.html",
   "scripts": {
     "start": "parcel --port 8080",
@@ -326,50 +342,77 @@ package.json 예시 파일을 참고하여 웹프로젝트의 엔트리 파일�
     "test": "jest",
     "coverage": "jest --coverage --coverage-reporters html",
     "watch:test": "jest --watchAll"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "@swc/core": "^1.2.218",
-    "@swc/jest": "^0.2.22",
-    "@testing-library/jest-dom": "^5.16.4",
-    "@testing-library/react": "^13.3.0",
-    "@types/jest": "^28.1.6",
-    "@types/react": "^18.0.15",
-    "@types/react-dom": "^18.0.6",
-    "@typescript-eslint/eslint-plugin": "^5.31.0",
-    "@typescript-eslint/parser": "^5.31.0",
-    "eslint": "^8.20.0",
-    "eslint-config-airbnb": "^19.0.4",
-    "eslint-plugin-import": "^2.26.0",
-    "eslint-plugin-jsx-a11y": "^6.6.1",
-    "eslint-plugin-react": "^7.30.1",
-    "eslint-plugin-react-hooks": "^4.6.0",
-    "jest": "^28.1.3",
-    "jest-environment-jsdom": "^28.1.3",
-    "parcel": "^2.8.0",
-    "process": "^0.11.10",
-    "typescript": "^4.7.4"
-  },
-  "dependencies": {
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "reflect-metadata": "^0.1.13",
-    "tsyringe": "^4.7.0",
-    "usestore-ts": "^0.0.3"
   }
+  ...
 }
 ```
 
 ### 1.10: 기본 코드 작성
 
-* `index.html`
-* `src/main.tsx`
-* `src/App.tsx`
-* `src/App.test.tsx`
-* `src/components/Greeting.test.tsx`
-* `src/components/Greeting.tsx`
+#### index.html
+
+```bash
+touch index.html
+```
+
+```html
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>React Demo App</title>
+  </head>
+  <body>
+    <p>Hello, React!</p>
+  </body>
+</html>
+```
+
+#### src/main.tsx
+
+```bash
+mkdir src
+touch src/main.tsx
+```
+
+```tsx
+import ReactDOM from 'react-dom/client';
+
+const element = document.getElementById('root');
+
+if (element) {
+  const root = ReactDOM.createRoot(element);
+  root.render(<p>Place for App Component</p>);
+}
+```
+
+```html
+...
+<body>
+  <div id="root"></div>
+  <script type="module" src="./src/main.tsx"></script>
+</body>
+...
+```
+
+#### src/App.tsx
+
+```bash
+touch src/App.tsx
+```
+
+```tsx
+import React from 'react';
+
+function App() {
+  return (
+    <div>App Component</div>
+  );
+}
+
+export default App;
+```
 
 ### Appendix: VSCode 설정
 
