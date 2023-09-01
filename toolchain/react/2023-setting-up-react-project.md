@@ -260,10 +260,24 @@ npm i -D jest @types/jest @swc/core @swc/jest \
     @testing-library/react @testing-library/jest-dom
 ```
 
-더 빠른 테스트 실행을 위해 swc 설정을 추가한다.
+더 빠른 테스트 실행을 위해 swc 설정을, 다양한 매쳐 사용을 위해 TypeScript, Jest 설정을 추가한다.
+
+tsconfig.json 파일의 `types` 속성에 다음과 같이 추가한다.
+
+```json
+{
+  "types": ["node", "jest", "@testing-library/jest-dom"],
+}
+```
 
 ```bash
 touch jest.setup.js
+```
+
+```js
+// jest.setup.js 예시
+
+import '@testing-library/jest-dom';
 ```
 
 ```js
@@ -272,8 +286,7 @@ touch jest.setup.js
 module.exports = {
   testEnvironment: 'jsdom',
   setupFilesAfterEnv: [
-    '@testing-library/jest-dom/extend-expect',
-    './jest.setup',
+    '<rootDir>/jest.setup.js',
   ],
   transform: {
     '^.+\\.(t|j)sx?$': ['@swc/jest', {
